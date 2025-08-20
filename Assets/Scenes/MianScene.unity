@@ -6246,6 +6246,83 @@ MonoBehaviour:
   targetCamera: {fileID: 1890219303}
   lockYAxis: 1
   rotationSpeed: 5
+--- !u!1 &235669336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 235669337}
+  - component: {fileID: 235669339}
+  - component: {fileID: 235669338}
+  m_Layer: 5
+  m_Name: Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &235669337
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235669336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0126}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1277198538}
+  - {fileID: 1927058035}
+  m_Father: {fileID: 390438202}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -377.6386, y: 0}
+  m_SizeDelta: {x: 431.72278, y: 651}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &235669338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235669336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.2}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &235669339
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235669336}
+  m_CullTransparentMesh: 1
 --- !u!1 &236770260
 GameObject:
   m_ObjectHideFlags: 0
@@ -10746,7 +10823,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 387383436}
-  - component: {fileID: 387383437}
   m_Layer: 5
   m_Name: Inner Room Wall
   m_TagString: Untagged
@@ -10772,35 +10848,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 214.23625, y: -249.7721}
-  m_SizeDelta: {x: 428.4725, y: 86.7569}
+  m_AnchoredPosition: {x: 214.23625, y: -245.82974}
+  m_SizeDelta: {x: 428.4725, y: 78.8722}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &387383437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387383435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 4
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!1 &389704577
 GameObject:
   m_ObjectHideFlags: 0
@@ -10894,8 +10944,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1277198538}
-  - {fileID: 1927058035}
+  - {fileID: 235669337}
   m_Father: {fileID: 464563526}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -21546,7 +21595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 196.7232, y: 206.39362}
+  m_AnchoredPosition: {x: 196.7232, y: 185.03}
   m_SizeDelta: {x: 393.4464, y: 412.7873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &815391962
@@ -24715,7 +24764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 214.23625, y: -65.80956}
+  m_AnchoredPosition: {x: 214.23625, y: -65.80955}
   m_SizeDelta: {x: 428.4725, y: 131.6191}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925505134
@@ -32970,8 +33019,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277198537}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0252}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -32981,11 +33030,11 @@ RectTransform:
   - {fileID: 559857507}
   - {fileID: 1019445930}
   - {fileID: 1254011}
-  m_Father: {fileID: 390438202}
+  m_Father: {fileID: 235669337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 205.1199, y: -122.70816}
+  m_AnchoredPosition: {x: 205.1199, y: -142}
   m_SizeDelta: {x: 410.2398, y: 245.41632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1277198539
@@ -38396,7 +38445,7 @@ MonoBehaviour:
     invertFade: 0
     distanceFadeStart: 50
     distanceFadeEnd: 60
-    textureOffset: {x: -0, y: -0, z: -0}
+    textureOffset: {x: 0, y: 0, z: 0}
     falloffMode: 0
     maskMode: 0
     materialMask: {fileID: 0}
@@ -38485,7 +38534,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1501814774}
-  - component: {fileID: 1501814775}
   m_Layer: 5
   m_Name: Inner Room Flooring
   m_TagString: Untagged
@@ -38511,35 +38559,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 214.23625, y: -43.37845}
-  m_SizeDelta: {x: 428.4725, y: 86.7569}
+  m_AnchoredPosition: {x: 214.23625, y: -39.4361}
+  m_SizeDelta: {x: 428.4725, y: 78.8722}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1501814775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1501814773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 4
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!1001 &1504255721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45914,7 +45936,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1734284596}
-  - component: {fileID: 1734284597}
   m_Layer: 5
   m_Name: Inner Room Furniture
   m_TagString: Untagged
@@ -45940,35 +45961,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 214.23625, y: -146.57527}
-  m_SizeDelta: {x: 428.4725, y: 86.7569}
+  m_AnchoredPosition: {x: 214.23625, y: -142.63292}
+  m_SizeDelta: {x: 428.4725, y: 78.8722}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1734284597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734284595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 6
-    m_Bottom: 13
-  m_ChildAlignment: 4
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 1
-  m_ReverseArrangement: 0
 --- !u!1 &1740774659
 GameObject:
   m_ObjectHideFlags: 0
@@ -47877,7 +47872,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 196.7232, y: 0.0000076293945}
+  m_AnchoredPosition: {x: 196.7232, y: 1}
   m_SizeDelta: {x: 393.4464, y: 313.4155}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811158170
@@ -52059,15 +52054,15 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927058034}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1811158169}
   - {fileID: 582595077}
   - {fileID: 815391961}
-  m_Father: {fileID: 390438202}
+  m_Father: {fileID: 235669337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -54229,7 +54224,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1977154133}
-  - component: {fileID: 1977154134}
   m_Layer: 5
   m_Name: Inner Room Lightning
   m_TagString: Untagged
@@ -54255,35 +54249,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 214.23625, y: -352.9689}
-  m_SizeDelta: {x: 428.4725, y: 86.7569}
+  m_AnchoredPosition: {x: 214.23625, y: -349.02655}
+  m_SizeDelta: {x: 428.4725, y: 78.8722}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1977154134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977154132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 4
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!1 &1989224287
 GameObject:
   m_ObjectHideFlags: 0
